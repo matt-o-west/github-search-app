@@ -1,0 +1,28 @@
+.stats {
+    display: flex;
+    position: relative;
+    width: 80%;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    background-color: #141d2f;
+    border-radius: .5rem;
+    padding: .5rem;
+    justify-content: left;
+    
+}
+
+table {
+    border-spacing: 1.5rem .35rem;
+    text-align: left;
+}
+
+th {
+    text-align: left;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+td {
+    text-align: center;
+    font-size: .75rem;
+}

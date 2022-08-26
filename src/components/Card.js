@@ -1,5 +1,5 @@
 import './Card.css';
-//import Followers from './Followers';
+import Followers from './Followers';
 //import Socials from './Socials';
 
 function Card() {
@@ -14,6 +14,7 @@ function Card() {
         </div>
         <div className="card-content">
             <p>I am a very simple card to display github user info. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+        <Followers />
         </div>
         </div>
     );

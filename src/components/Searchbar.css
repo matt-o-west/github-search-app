@@ -1,5 +1,5 @@
 .searchbar {
-    display: block;
+    display: flex;
     font-size: 1.5rem;
     width: 36%;
     justify-content: space-between;
@@ -37,7 +37,7 @@ input:focus {
 }
 
 .searchbutton { 
-    display: inline-block;
+    display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -47,7 +47,8 @@ input:focus {
     border-radius: 0.35rem;
     background: #0079ff;
     color: #fff;
-    position: absolute;
+    position: relative;
+    flex-direction: flex-end;
     margin: 0.20rem;
     margin-left: 0.7rem;
 
