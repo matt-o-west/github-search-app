@@ -1,6 +1,6 @@
 import './Card.css';
 import Followers from './Followers';
-//import Socials from './Socials';
+import Socials from './Socials';
 
 function Card() {
     //const [card, setCard] = useState([]);
@@ -15,6 +15,7 @@ function Card() {
         <div className="card-content">
             <p>I am a very simple card to display github user info. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
         <Followers />
+        <Socials />
         </div>
         </div>
     );

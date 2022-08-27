@@ -17,6 +17,7 @@ function Followers() {
                 <td className='followers'>###</td>
                 <td className='following'>###</td>
             </tr>
+
         </table>
             
         </div>

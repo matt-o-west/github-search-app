@@ -1,0 +1,11 @@
+.socials {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-row: auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    width: 100%;
+    font-size: 1rem;
+    justify-items: left;
+
+}
