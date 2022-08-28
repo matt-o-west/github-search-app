@@ -9,7 +9,7 @@ function Card(props) {
 console.log(props.username.company)
     return (
         <div className="card">
-            <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="" className="avatar"/>
+            <img src={props.username.avatar_url} alt="" className="avatar"/>
         <div className="username">
         <span>{props.username.login}</span>
         </div>
