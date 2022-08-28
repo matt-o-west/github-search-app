@@ -6,9 +6,9 @@
     margin-bottom: 1rem;
     background-color: #141d2f;
     border-radius: .5rem;
-    padding: .5rem;
-    justify-content: left;
-    
+    padding: .5rem 1rem;
+    justify-content: center;
+    margin-bottom: 1.75rem;
 }
 
 table {
@@ -24,5 +24,6 @@ th {
 
 td {
     text-align: center;
-    font-size: .75rem;
+    font-size: 1.35rem;
+    font-weight: 600;
 }

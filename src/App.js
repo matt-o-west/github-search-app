@@ -8,14 +8,17 @@ function App() {
   const [user, setUser] = useState([]);
 
   useEffect(() => {     
-    fetch(`https://api.github.com/users/${user}`)
+    fetch(`https://api.github.com/users/matt-o-west`)
       .then(response => response.json())
-      .then(data => setUser(data))
+      .then(data => {
+        console.log(data)
+        setUser(data)
+      })
       .catch(error => console.log(error));
 }, []);
 
   function handleFormSubmit(event) {
-    setUser(event.target.value);
+   return setUser(event.target.value);
   }
 
   return (
@@ -23,7 +26,7 @@ function App() {
 
       <header className="App-header">
           <Searchbar onSubmit={handleFormSubmit}/>
-          <Card user={user}/>
+          <Card username={user}/>
       </header>
   );
 }

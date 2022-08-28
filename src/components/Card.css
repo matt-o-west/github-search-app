@@ -1,3 +1,11 @@
+p {
+    display: flex;
+    text-align: left;
+    font-size: 1rem;
+    align-items: left;
+    padding-left: 9rem;
+    padding-bottom: 1rem;
+}
 
 
 .avatar {
@@ -37,4 +45,9 @@
     padding: 1.75rem 1rem;
     align-content: center;
     vertical-align: top;
+}
+
+.followers {
+    display: flex;
+    justify-content: center;
 }

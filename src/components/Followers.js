@@ -1,8 +1,10 @@
 import './Followers.css';
 //import Socials from './Socials';
 
-function Followers() {
+function Followers(props) {
     //const [card, setCard] = useState([]);
+    console.log(props)
+
 
     return (
         <div className="stats">
@@ -13,9 +15,9 @@ function Followers() {
                 <th className='tablehead'>Following</th>
             </tr>
             <tr>
-                <td className='repos'>###</td>
-                <td className='followers'>###</td>
-                <td className='following'>###</td>
+                <td className='repos'>{props.public_repos}</td>
+                <td className='followers'>{props.followers}</td>
+                <td className='following'>{props.following}</td>
             </tr>
 
         </table>
