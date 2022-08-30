@@ -8,7 +8,7 @@ function App() {
   const [user, setUser] = useState([]);
 
   useEffect(() => {     
-    fetch(`https://api.github.com/users/matt-o-west`)
+    fetch(`https://api.github.com/users/octocat`)
       .then(response => response.json())
       .then(data => {
         console.log(data)
@@ -18,7 +18,7 @@ function App() {
 }, []);
 
   function handleFormSubmit(event) {
-   return setUser(event.target.value);
+      setUser(event.target.value);
   }
 
   return (

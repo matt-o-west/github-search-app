@@ -2,9 +2,9 @@ import './Card.css';
 import Followers from './Followers';
 import Socials from './Socials';
 
+
 function Card(props) {
     //const [card, setCard] = useState([]);
-
 
 console.log(props.username.company)
     return (
@@ -21,7 +21,7 @@ console.log(props.username.company)
         <Followers followers={props.username.followers} following={props.username.following} public_repos={props.username.public_repos}/>
         </div>
         <div className="socials">
-        <Socials />
+        <Socials location={props.username.location} company={props.username.company} blog={props.username.blog} twitter_username={props.username.twitter_username}/>
         </div>
         </div>
         </div>
