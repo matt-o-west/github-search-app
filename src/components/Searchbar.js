@@ -2,15 +2,15 @@ import './Searchbar.css';
 //import Followers from './Followers';
 //import Socials from './Socials';
  
-function Searchbar() {
+function Searchbar(props) {
     //const [card, setCard] = useState([]);
 
 
     return (
-        <form className="searchbar">
+        <form className="searchbar" onSubmit={props.onFormSubmit}>
             <img src="icon-search.svg" alt="search" />
-            <input className='text' type="text" placeholder="Search Github username..."/>
-            <button className='searchbutton' type="submit">Search</button>
+            <input className='text' type="text" placeholder="Search Github username..." onChange={props.onFormChange}/>
+            <button className='searchbutton' type="submit" value="Search">Search</button>
         </form>
     );
 }

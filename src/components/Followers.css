@@ -27,3 +27,23 @@ td {
     font-size: 1.35rem;
     font-weight: 600;
 }
+
+@media (max-width: 768px) {
+    .stats {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .stats {
+        width: 80%;
+    }
+
+    table {
+        border-spacing: .75rem .35rem;
+    }
+
+    th {
+        font-size: 1.12rem;
+    }
+}

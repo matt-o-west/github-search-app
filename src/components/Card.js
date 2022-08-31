@@ -6,7 +6,6 @@ import Socials from './Socials';
 function Card(props) {
     //const [card, setCard] = useState([]);
 
-console.log(props.username.company)
     return (
         <div className="card">
             <img src={props.username.avatar_url} alt="" className="avatar"/>

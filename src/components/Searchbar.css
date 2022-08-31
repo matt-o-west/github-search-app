@@ -53,3 +53,21 @@ input:focus {
     margin-left: 0.7rem;
 
 }
+
+@media (max-width: 768px) {
+    .searchbar {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .searchbar input {
+        width: 80%;
+        margin-left: .25rem;
+    }
+
+    .searchbar img {
+        display: none;
+    }
+
+}
