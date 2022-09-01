@@ -1,7 +1,7 @@
 .searchbar {
     display: flex;
     font-size: 1.5rem;
-    width: 36%;
+    width: 41%;
     justify-content: space-between;
     padding: 0.5rem;
     border-radius: 0.5rem;
@@ -54,20 +54,3 @@ input:focus {
 
 }
 
-@media (max-width: 768px) {
-    .searchbar {
-        width: 80%;
-    }
-}
-
-@media (max-width: 480px) {
-    .searchbar input {
-        width: 80%;
-        margin-left: .25rem;
-    }
-
-    .searchbar img {
-        display: none;
-    }
-
-}

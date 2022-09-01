@@ -6,12 +6,23 @@ import { useState, useEffect } from 'react';
 
 function App() {
   //use states for searchbar and card
-  const [user, setUser] = useState("matt-o-west");
+  const [user, setUser] = useState("octocat");
   const [data, setData] = useState([]);
 
+if (user === "") {
+  setUser("octocat");
+}
 
-  //fetch data from github api
-  useEffect(() => {     
+  //handle searchbar input - this works
+  function handleFormChange(event) {
+      event.preventDefault();
+      console.log(user)
+      setUser(event.target.value);
+  }
+
+  //handle searchbar submit - this doesn't work
+  function handleFormSubmit(event) {
+    event.preventDefault();
     fetch(`https://api.github.com/users/${user}`)
       .then(response => response.json())
       .then(data => {
@@ -19,33 +30,13 @@ function App() {
         setData(data)
       })
       .catch(error => console.log(error));
-}, [user]);
-
-if (user === "") {
-  setUser("matt-o-west");
 }
-
-  //handle searchbar input
-  function handleFormChange(event) {
-      event.preventDefault();
-      console.log(user)
-      setUser(event.target.value);
-  }
-
-  function handleFormSubmit(event) {
-    event.preventDefault();
-    setUser("");
-}
-
-
 
   return (
-
-
-      <header className="App-header">
+      <div className="App-header">
           <Searchbar onFormChange={handleFormChange} onFormSubmit={handleFormSubmit}/>
           <Card username={data}/>
-      </header>
+      </div>
   );
 }
 

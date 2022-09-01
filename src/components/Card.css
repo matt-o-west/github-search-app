@@ -13,15 +13,15 @@ p {
     margin-right: 20px;
     padding-left: .5rem;
     padding-top: .5rem;
-    width: 100px;
-    height: 100px;
+    width: 8rem;
+    height: 8rem;
 }
 
 
 .card {
     display: block;
     font-size: 1.5rem;
-    width: 35%;
+    width: 40%;
     margin: 0 auto;
     padding: 1rem 1rem; 
     border-radius: 20%;
@@ -55,7 +55,26 @@ p {
 
 @media (max-width: 768px) {
     .card {
-        width: 74%;
+        width: 68%;
+    }
+
+    .card-content {
+        padding-left: 0rem;
+    }
+
+    .username {
+        padding: 1.75rem 1rem;
+    }
+}
+
+@media (max-width: 1280px) {
+    .card {
+        width: 50%;
+    }
+
+    .avatar {
+        width: 10rem;
+        height: 10rem;
     }
 }
 

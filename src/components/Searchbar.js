@@ -9,7 +9,7 @@ function Searchbar(props) {
     return (
         <form className="searchbar" onSubmit={props.onFormSubmit}>
             <img src="icon-search.svg" alt="search" />
-            <input className='text' type="text" placeholder="Search Github username..." onChange={props.onFormChange}/>
+            <input className='text' type="text" placeholder="Search Github username..." onChange={props.onFormChange} />
             <button className='searchbutton' type="submit" value="Search">Search</button>
         </form>
     );

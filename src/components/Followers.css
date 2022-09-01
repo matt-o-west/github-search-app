@@ -30,8 +30,11 @@ td {
 
 @media (max-width: 768px) {
     .stats {
-        width: 100%;
+        width: 80%;
+
     }
+
+
 }
 
 @media (max-width: 480px) {

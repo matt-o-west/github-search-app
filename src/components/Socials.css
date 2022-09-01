@@ -1,6 +1,6 @@
 .socials {
     display: grid;
-    grid-template-columns: 200px 200px;
+    grid-template-columns: 300px 300px;
     grid-row: auto auto;
     grid-column-gap: 60px;
     grid-row-gap: 20px;
@@ -12,7 +12,16 @@
 
 @media (max-width: 768px) {
     .socials {
+        grid-template-columns: 100px 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .socials {
         grid-template-columns: auto auto;
+        align-items: center;
+        justify-items: center;
+        margin-left: 3rem;
     }
 }
 
