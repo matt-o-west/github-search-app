@@ -2,7 +2,7 @@ import './App.css';
 //import Topbar from './components/Topbar';
 import Searchbar from './components/Searchbar';
 import Card from './components/Card';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 function App() {
   //use states for searchbar and card

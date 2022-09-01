@@ -3,7 +3,7 @@ p {
     text-align: left;
     font-size: 1rem;
     align-items: left;
-    padding-left: 9rem;
+    padding-left: 11rem;
     padding-bottom: 1rem;
 }
 
@@ -13,8 +13,8 @@ p {
     margin-right: 20px;
     padding-left: .5rem;
     padding-top: .5rem;
-    width: 8rem;
-    height: 8rem;
+    width: 10rem;
+    height: 10rem;
 }
 
 
@@ -43,9 +43,14 @@ p {
 
 .username {
     display: inline-block;
-    padding: 1.75rem 1rem;
+    padding: 2.5rem 1.25rem;
     align-content: center;
     vertical-align: top;
+}
+
+.username span {
+    font-size: 2.5rem;
+    font-weight: 600;
 }
 
 .followers {
@@ -73,8 +78,8 @@ p {
     }
 
     .avatar {
-        width: 10rem;
-        height: 10rem;
+        width: 8rem;
+        height: 8rem;
     }
 }
 

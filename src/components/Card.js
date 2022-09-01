@@ -12,7 +12,7 @@ function Card(props) {
         <div className="username">
         <span>{props.username.login}</span>
         </div>
-        <p>{props.username.bio}</p>
+        <p>{props.username.bio ?? " no bio available"}</p>
         <div className="card-content">
 
 

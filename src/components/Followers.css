@@ -1,7 +1,7 @@
 .stats {
     display: flex;
     position: relative;
-    width: 80%;
+    width: 100%;
     justify-content: space-between;
     margin-bottom: 1rem;
     background-color: #141d2f;
@@ -39,7 +39,8 @@ td {
 
 @media (max-width: 480px) {
     .stats {
-        width: 80%;
+        width: 78%;
+
     }
 
     table {
@@ -47,6 +48,10 @@ td {
     }
 
     th {
-        font-size: 1.12rem;
+        font-size: 1rem;
+    }
+
+    td {
+        font-size: 1rem;
     }
 }
