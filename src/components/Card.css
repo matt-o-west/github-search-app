@@ -73,8 +73,9 @@ p {
 }
 
 @media (max-width: 1280px) {
+
     .card {
-        width: 50%;
+        width: 80%;
     }
 
     .avatar {
@@ -93,15 +94,28 @@ p {
     }
 
     p {
-        padding-left: 0;
+        padding-left: 2rem;
     }
 
     .avatar {
-        width: 60px;
-        height: 60px;
+        width: 5rem;
+        height: 5rem;
     }
     
     .username {
         padding-top: 1rem;
+    }
+}
+
+@media (max-width: 414px) {
+    .avatar {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 280px) {
+   p {
+        font-size: .85rem;
     }
 }

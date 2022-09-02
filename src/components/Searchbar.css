@@ -56,16 +56,17 @@ input:focus {
 
 @media (max-width: 1280px) and (min-width: 768px) {
     .searchbar {
-        width: 52%;
+        width: 82%;
     }
 }
 
 
 @media (max-width: 768px) and (min-width: 480px) {
     .searchbar {
-        width: 72%;
+        width: 82%;
     }
 
+    
 
 }
 

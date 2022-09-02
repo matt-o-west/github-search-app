@@ -8,11 +8,11 @@ function Card(props) {
 
     return (
         <div className="card">
-            <img src={props.username.avatar_url} alt="" className="avatar"/>
+            <img src={props.username.avatar_url ?? "icon-not-available.svg"} alt="" className="avatar"/>
         <div className="username">
-        <span>{props.username.login}</span>
+        <span>{props.username.login ?? "not a user"}</span>
         </div>
-        <p>{props.username.bio ?? " no bio available"}</p>
+        <p>{props.username.bio ?? "no bio available"}</p>
         <div className="card-content">
 
 
