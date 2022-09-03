@@ -65,9 +65,6 @@ input:focus {
     .searchbar {
         width: 82%;
     }
-
-    
-
 }
 
 @media (max-width: 480px) {

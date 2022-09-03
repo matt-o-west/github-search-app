@@ -1,13 +1,20 @@
 import './App.css';
-//import Topbar from './components/Topbar';
+import Topbar from './components/Topbar';
 import Searchbar from './components/Searchbar';
 import Card from './components/Card';
-import { useState } from 'react';
+import { useState, /*createContext*/ } from 'react';
+
+//export const ThemeContext = createContext(null)
 
 function App() {
   //use states for searchbar and card
   const [user, setUser] = useState("octocat");
   const [data, setData] = useState([]);
+  //const [theme, setTheme] = useState("light");
+
+  /*const toggleTheme = () => { 
+    setTheme((curr) => curr === "light" ? "dark" : "light");
+  }*/
 
 if (user === "") {
   setUser("octocat");
@@ -34,6 +41,7 @@ if (user === "") {
 
   return (
       <div className="App-header">
+          <Topbar />
           <Searchbar onFormChange={handleFormChange} onFormSubmit={handleFormSubmit}/>
           <Card username={data}/>
       </div>

@@ -51,6 +51,7 @@ p {
 .username span {
     font-size: 2.5rem;
     font-weight: 600;
+    font-family: "Space Mono", monospace;
 }
 
 .followers {
