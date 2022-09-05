@@ -1,10 +1,11 @@
 .topbar {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     padding: 0 1rem;
-    width: 80%;
+    width: 85%;
+    margin-bottom: 1.5rem;
 }
 
 span {
@@ -23,7 +24,7 @@ span {
     font-size: 1rem;
     font-weight: 400;
     font-family: "Space Mono", monospace;
-    background-color: #1e2a47;
+    background-color: #141d2f;
     color: #fff;
     border: none;
     border-radius: .5rem;
@@ -33,6 +34,14 @@ span {
     cursor: pointer;
     padding-right: .25rem;
     justify-content: flex-end;
+}
+
+.darkmode:hover {
+    color: #697c9a;
+}
+
+.darkmode img:hover {
+    color: #697c9a;
 }
 
 button img {
@@ -50,4 +59,9 @@ button span {
     font-size: 1.5rem;
     font-weight: 600;
     font-family: "Londrina Sketch", cursive;
+}
+
+#light {
+    background-color: #fefefe;
+    color: #697c9a;
 }

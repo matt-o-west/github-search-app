@@ -10,7 +10,7 @@
 }
 
 .searchbar input {
-    width: 69%;
+    width: 100%;
     padding: 0.75rem;
     background-color: #29385b;
     color: #fff;
@@ -81,4 +81,9 @@ input:focus {
         display: none;
     }
 
+}
+
+#light {
+    background-color: #fff;
+    color: #000;
 }

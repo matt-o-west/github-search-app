@@ -7,7 +7,7 @@ function Card(props) {
     //const [card, setCard] = useState([]);
 
     return (
-        <div className="card">
+        <div className="card" id={props.id}>
             <img src={props.username.avatar_url ?? "icon-not-available.svg"} alt="" className="avatar"/>
         <div className="username">
         <span>{props.username.login ?? "not a user"}</span>
@@ -17,7 +17,7 @@ function Card(props) {
 
 
         <div className="followers">
-        <Followers followers={props.username.followers} following={props.username.following} public_repos={props.username.public_repos}/>
+        <Followers followers={props.username.followers} following={props.username.following} public_repos={props.username.public_repos} id={props.id}/>
         </div>
         <div className="socials">
         <Socials location={props.username.location} company={props.username.company} blog={props.username.blog} twitter_username={props.username.twitter_username}/>
