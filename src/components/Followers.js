@@ -7,7 +7,7 @@ function Followers(props) {
 
 
     return (
-        <div className="stats">
+        <div className="stats" id={props.id}>
         <table>
             <tr>
                 <th className='tablehead'>Repos</th>

@@ -13,7 +13,6 @@
     width: 100%;
     padding: 0.75rem;
     background-color: #29385b;
-    color: #fff;
     border: none;
     border-radius: 0.35rem;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
@@ -54,6 +53,10 @@ input:focus {
 
 }
 
+.searchbutton:hover {
+    background: #0062cc;
+}
+
 @media (max-width: 1280px) and (min-width: 768px) {
     .searchbar {
         width: 82%;
@@ -84,6 +87,12 @@ input:focus {
 }
 
 #light {
+    background-color: #fff;
+    color: #000;
+    box-shadow: 4.0px 8.0px 8.0px hsl(0deg 0% 0% / 0.38);
+}
+
+#light input {
     background-color: #fff;
     color: #000;
 }
