@@ -1,13 +1,15 @@
 import './Card.css';
 import Followers from './Followers';
 import Socials from './Socials';
+import { useContext } from "react";
+import { ThemeContext } from '../helpers/ThemeContext.js';
 
 
 function Card(props) {
-    //const [card, setCard] = useState([]);
+    const context = useContext(ThemeContext);
 
     return (
-        <div className="card" id={props.id}>
+        <div className="card" id={context.theme}>
             <img src={props.username.avatar_url ?? "icon-not-available.svg"} alt="" className="avatar"/>
         <div className="username">
         <span>{props.username.login ?? "not a user"}</span>

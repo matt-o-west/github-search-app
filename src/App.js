@@ -2,23 +2,21 @@ import './App.css';
 import Topbar from './components/Topbar';
 import Searchbar from './components/Searchbar';
 import Card from './components/Card';
-import { useState, createContext } from 'react';
-
-export const ThemeContext = createContext(null)
+import { useState, useContext } from 'react';
+import { ThemeContext, ThemeProvider } from "./helpers/ThemeContext.js";
 
 function App() {
   //use states for searchbar and card
   const [user, setUser] = useState("octocat");
   const [data, setData] = useState([]);
-  const [theme, setTheme] = useState("light");
 
-  const toggleTheme = () => { 
-    setTheme((curr) => curr === "light" ? "dark" : "light");
+  const context = useContext(ThemeContext);
+
+  console.log(context);
+
+  if (user === "") {
+    setUser("octocat");
   }
-
-if (user === "") {
-  setUser("octocat");
-}
 
 
   //handle searchbar input - this is redundant but keeping here for learning purposes
@@ -34,21 +32,27 @@ if (user === "") {
     fetch(`https://api.github.com/users/${user}`)
       .then(response => response.json())
       .then(data => {
-        //console.log(data)
         setData(data)
       })
       .catch(error => console.log(error));
 }
 
   return (
-    <ThemeContext.Provider value={{ theme, toggleTheme }}>
-      <div className="App-header" id={theme}>
-          <Topbar onThemeToggle={toggleTheme} id={theme}/>
-          <Searchbar onFormChange={handleFormChange} onFormSubmit={handleFormSubmit} id={theme}/>
-          <Card username={data} id={theme}/>
+    
+      <div className="App-header" id={context.theme}>
+          <Topbar onThemeToggle={() => context.toggleTheme()} />
+          <Searchbar onFormChange={handleFormChange} onFormSubmit={handleFormSubmit} />
+          <Card username={data} />
       </div>
-    </ThemeContext.Provider>
   );
 }
 
-export default App
+function AppWrapper() {
+  return (
+    <ThemeProvider>
+      <App />
+    </ThemeProvider>
+  );
+}
+
+export default AppWrapper

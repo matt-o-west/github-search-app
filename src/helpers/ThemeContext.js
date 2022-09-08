@@ -5,13 +5,9 @@ const ThemeContext = createContext();
 function ThemeProvider(props) {
     const [theme, setTheme] = useState("dark");
 
-    function toggleTheme() {
-        if (theme === "dark") {
-            setTheme("light");
-        } else {
-            setTheme("dark");
-        }
-    }
+    const toggleTheme = () => { 
+        setTheme((curr) => curr === "light" ? "dark" : "light");
+      }
 
     const value = {
         theme: theme,

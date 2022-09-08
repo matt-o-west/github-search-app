@@ -1,13 +1,15 @@
 import './Followers.css';
-//import Socials from './Socials';
+import { useContext } from "react";
+import {ThemeContext} from '../helpers/ThemeContext.js';
+
 
 function Followers(props) {
-    //const [card, setCard] = useState([]);
-    console.log(props)
+    const context = useContext(ThemeContext);
+
 
 
     return (
-        <div className="stats" id={props.id}>
+        <div className="stats" id={context.theme}>
         <table>
             <tr>
                 <th className='tablehead'>Repos</th>

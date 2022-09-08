@@ -1,19 +1,14 @@
 import './Topbar.css';
-//import Followers from './Followers';
-//import Socials from './Socials';
+import {ThemeContext} from '../helpers/ThemeContext.js';
+import { useContext } from "react";
  
 function Topbar(props) {
-
-    console.log(props)
+    const context = useContext(ThemeContext);
     
-    function toggleTheme() {
-        props.onThemeToggle();
-    }
-
     return (
         <div className="topbar" >
             <span>devfinder.to</span>
-            <button className='darkmode' onClick={toggleTheme} id={props.id}>LIGHT <img src="icon-sun.svg" className='theme' alt="light" ></img></button>
+            <button className='darkmode' onClick={() => context.toggleTheme()} >LIGHT <img src="icon-sun.svg" className='theme' alt="light" ></img></button>
         </div>
     );
 }
