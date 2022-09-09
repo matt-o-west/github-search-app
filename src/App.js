@@ -2,7 +2,7 @@ import './App.css';
 import Topbar from './components/Topbar';
 import Searchbar from './components/Searchbar';
 import Card from './components/Card';
-import { useState, useContext } from 'react';
+import { useState, useContext, useEffect } from 'react';
 import { ThemeContext, ThemeProvider } from "./helpers/ThemeContext.js";
 
 function App() {
@@ -13,6 +13,15 @@ function App() {
   const context = useContext(ThemeContext);
 
   console.log(context);
+
+  useEffect(() => { 
+    fetch(`https://api.github.com/users/github`)
+      .then(response => response.json())
+      .then(data => {
+        setData(data)
+      })
+      .catch(error => console.log(error));
+  }, [])
 
   if (user === "") {
     setUser("octocat");
