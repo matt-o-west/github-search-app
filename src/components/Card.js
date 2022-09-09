@@ -11,12 +11,20 @@ function Card(props) {
 
     return (
         <div className="card" id={context.theme}>
+            <div className="cardheader">
             <img src={props.username.avatar_url ?? "icon-not-available.svg"} alt="" className="avatar"/>
-        <div className="username">
-        <span>{props.username.name ?? "not given"}</span>
-        <div className='handle'>
-        <span>@{props.username.login ?? "none"}</span>
-        </div>
+            <div className="username">
+            <span>{props.username.name ?? "not given"}</span>
+            </div>
+            <span className="joined">{props.username.created_at ?? "Not Available"}</span>
+            <div className='handle'>
+            <span>@{props.username.login ?? "none"}</span>
+            
+            
+            </div>
+        
+        
+        
         </div>
         <p>{props.username.bio ?? "no bio available"}</p>
         <div className="card-content">

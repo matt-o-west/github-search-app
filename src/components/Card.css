@@ -41,6 +41,14 @@ p {
     padding-left: 8rem;
 }
 
+.cardheader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
 .username {
     display: inline-block;
     padding: 1.25rem 1.25rem;
