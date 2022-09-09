@@ -7,12 +7,16 @@ import { ThemeContext } from '../helpers/ThemeContext.js';
 
 function Card(props) {
     const context = useContext(ThemeContext);
+    console.log(props.username)
 
     return (
         <div className="card" id={context.theme}>
             <img src={props.username.avatar_url ?? "icon-not-available.svg"} alt="" className="avatar"/>
         <div className="username">
-        <span>{props.username.login ?? "not a user"}</span>
+        <span>{props.username.name ?? "not given"}</span>
+        <div className='handle'>
+        <span>@{props.username.login ?? "none"}</span>
+        </div>
         </div>
         <p>{props.username.bio ?? "no bio available"}</p>
         <div className="card-content">

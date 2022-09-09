@@ -43,7 +43,7 @@ p {
 
 .username {
     display: inline-block;
-    padding: 2.5rem 1.25rem;
+    padding: 1.25rem 1.25rem;
     align-content: center;
     vertical-align: top;
 }
@@ -52,11 +52,33 @@ p {
     font-size: 2.5rem;
     font-weight: 600;
     font-family: "Space Mono", monospace;
+    padding: 0;
+    margin: 0;
+    width: 100%;
 }
 
 .followers {
     display: flex;
     justify-content: center;
+}
+
+.handle {
+    font-family: "space-mono", monospace;
+    display: inline-block;
+    padding: 1rem 1.25rem;
+    align-content: center;
+    vertical-align: top;
+    padding: 0;
+    margin: 0;
+}
+
+.handle span {
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: "Space Mono", monospace;
+    padding: 0rem .5rem;
+    margin: 0;
+    color: #0079ff;
 }
 
 @media (max-width: 768px) {
