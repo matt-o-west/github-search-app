@@ -26,12 +26,8 @@ function parseDate(tdate) {
   if (diff <= 129600) {return '1 day ago';}
   if (diff < 604800) {return Math.round(diff / 86400) + ' days ago';}
   if (diff <= 777600) {return '1 week ago';}
-
-  
   
   return 'on ' + systemDate;
-
-  
 }
 
 const year = parseDate(props.username.created_at).toString().slice(13, 18);
