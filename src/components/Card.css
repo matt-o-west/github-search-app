@@ -92,14 +92,17 @@ p {
 
 .joined {
     font-family: "space-mono", monospace;
-    display: inline-block;
+    display: flex;
     padding: 1rem 1.25rem;
     align-content: center;
     vertical-align: top;
     padding: 0;
     margin: 0;
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     font-weight: 500;
+    width: 60%;
+    padding-bottom: 4rem;
+
 }
 
 @media (max-width: 768px) {
@@ -149,6 +152,10 @@ p {
     .username {
         padding-top: 1rem;
     }
+
+    .joined {
+        display: none;
+    }
 }
 
 @media (max-width: 414px) {
@@ -156,11 +163,19 @@ p {
         justify-content: center;
         align-items: center;
     }
+
+    .joined {
+        display: none;
+    }
 }
 
 @media (max-width: 280px) {
    p {
         font-size: .85rem;
+    }
+
+    .joined {
+        display: none;
     }
 }
 

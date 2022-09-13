@@ -3,6 +3,7 @@ import Followers from './Followers';
 import Socials from './Socials';
 import { useContext } from "react";
 import { ThemeContext } from '../helpers/ThemeContext.js';
+import { da } from 'date-fns/locale';
 
 
 function Card(props) {
@@ -33,6 +34,12 @@ function parseDate(tdate) {
   
 }
 
+const year = parseDate(props.username.created_at).toString().slice(13, 18);
+const day = parseDate(props.username.created_at).toString().slice(7, 12);
+
+
+console.log(day)
+
     return (
         <div className="card" id={context.theme}>
             <div className="cardheader">
@@ -44,7 +51,7 @@ function parseDate(tdate) {
             </div>
             </div>
             
-            <span className="joined">joined {parseDate(props.username.created_at) ?? ""}</span>
+            <span className="joined">joined {day + year ?? ""}</span>
         </div>
         <p>{props.username.bio ?? "no bio available"}</p>
         <div className="card-content">
