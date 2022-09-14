@@ -3,7 +3,7 @@ import Followers from './Followers';
 import Socials from './Socials';
 import { useContext } from "react";
 import { ThemeContext } from '../helpers/ThemeContext.js';
-import { da } from 'date-fns/locale';
+
 
 
 function Card(props) {

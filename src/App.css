@@ -22,6 +22,7 @@
   background-color: #f5f8ff;
   color: #697c9a;
   transition: ease-in-out 0.25s;
+  box-shadow: 4.0px 8.0px 8.0px hsl(0deg 0% 0% / 0.38);
 }
 
 #dark {

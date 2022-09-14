@@ -36,7 +36,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: end;
+    justify-content: flex-end;
     font-size: .90rem;
     padding-left: 8rem;
 }
@@ -69,6 +69,7 @@ p {
 .followers {
     display: flex;
     justify-content: center;
+    box-shadow: none;
 }
 
 .handle {
@@ -182,4 +183,5 @@ p {
 #light {
     color: #697c9a;
     background-color: #f5f8ff;
+
 }
